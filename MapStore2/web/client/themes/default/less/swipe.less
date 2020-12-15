@@ -1,0 +1,58 @@
+/*
+* Copyright 2020, GeoSolutions Sas.
+* All rights reserved.
+*
+* This source code is licensed under the BSD-style license found in the
+* LICENSE file in the root directory of this source tree.
+*/
+
+.mapstore-swipe-slider {
+    position: absolute;
+    z-index: 100;
+    background-color: @ms2-color-primary;
+}
+
+.mapstore-swipe-settings {
+
+    .ms-resizable-modal {
+        .modal-content {
+            overflow: visible;
+
+        &.ms-xs {
+            min-height: 22%;
+            height: auto;
+            width: 25%;
+            }
+        }
+    }
+
+    .mapstore-swipe-settings-modal {
+
+        /* Enable showing of select dropdown */
+        .modal-body {
+            overflow: visible;
+
+            .mapstore-swipe-setiings-modal-body {
+                overflow: visible;
+        
+                & > div {
+                    overflow: visible !important;
+                }
+
+                .ms2-border-layout-body {
+                    overflow-y: visible !important;
+                }
+            }
+        }
+    }
+
+    .mapstore-swipe-settings-slider {
+        position: relative;
+        padding: 0 17.5px;
+        overflow-y: visible;
+    }
+
+    .mapstore-swipe-settings-spy {
+        padding: 15px 17.5px;
+    }
+}
